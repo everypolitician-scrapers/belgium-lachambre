@@ -41,7 +41,7 @@ def scrape_term(t)
       id: mp_page.to_s[/key=(\w+)/, 1],
       sort_name: tds[0].text.tidy,
       party: tds[1].text.tidy,
-      email: tds[2].css('a').text.tidy,
+      email: tds[2].css('a').text.tidy.reverse,
       website: tds[3].css('a/@href').text,
       term: t[:id],
     }.merge(scrape_mp(mp_page))
