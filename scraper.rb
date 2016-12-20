@@ -58,7 +58,6 @@ terms = [
   }
 ]
 
-terms.each do |t| 
-  ScraperWiki.save_sqlite([:id], t, 'terms')
-  scrape_term(t) 
+terms.each do |t|
+  scrape_term(t)
 end
