@@ -24,8 +24,7 @@ def scrape_mp(url)
   }
 end
 
-def scrape_term(t)
-  url = t[:source]
+def scrape_term(termid, url)
   noko = noko_for(url)
   noko.css('div#story div#story table').first.css('tr').each do |tr|
     tds = tr.css('td')
@@ -36,21 +35,11 @@ def scrape_term(t)
       party:     tds[1].text.tidy,
       email:     tds[2].css('a').text.tidy.reverse,
       website:   tds[3].css('a/@href').text,
-      term:      t[:id],
+      term:      termid,
     }.merge(scrape_mp(mp_page))
+    # puts data
     ScraperWiki.save_sqlite(%i(id term), data)
   end
 end
 
-terms = [
-  {
-    id:         54,
-    name:       'Législature 54',
-    start_date: '2014',
-    source:     'http://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&cfm=cvlist54.cfm?legis=54',
-  },
-]
-
-terms.each do |t|
-  scrape_term(t)
-end
+scrape_term(54, 'http://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&cfm=cvlist54.cfm?legis=54')
