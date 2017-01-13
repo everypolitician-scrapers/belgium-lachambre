@@ -1,0 +1,37 @@
+---
+request:
+  method: get
+  uri: http://www.lachambre.be/kvvcr/showpage.cfm?cfm=cvlist54.cfm?legis=54&language=fr&section=/depute&today=y
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Content-Type:
+    - text/html;charset=iso-8859-1
+    Vary:
+    - Accept-Encoding
+    Date:
+    - Fri, 13 Jan 2017 15:39:07 GMT
+    Content-Length:
+    - '14184'
+    Server:
+    - Web server
+    Proxy-Connection:
+    - Keep-Alive
+    Connection:
+    - Keep-Alive
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Fri, 13 Jan 2017 15:39:08 GMT
