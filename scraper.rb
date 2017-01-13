@@ -55,10 +55,6 @@ class LaChambre
       tds[0].text.tidy
     end
 
-    field :party do
-      tds[1].text.tidy
-    end
-
     field :email do
       tds[2].css('a/@href').text.gsub('mailto:', '')
     end
@@ -85,7 +81,7 @@ def scrape(h)
 end
 
 start = 'http://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&cfm=cvlist54.cfm?legis=54&today=%s'
-data = scrape(start % 'y' => LaChambre::MembersPage).members.map do |mem|
+data = scrape(start % 'n' => LaChambre::MembersPage).members.map do |mem|
   mem.to_h.merge(term: 54).merge(scrape(mem.source => LaChambre::MemberPage).to_h)
 end
 # puts data.map { |r| r.sort_by { |k, _| k }.to_h }
