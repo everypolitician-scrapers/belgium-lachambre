@@ -16,7 +16,7 @@ class ReversedEmails < Scraped::Response::Decorator
   def body
     Nokogiri::HTML(super).tap do |doc|
       doc.css('a.mail[href*=mailto]').each do |a|
-        a[:href] = 'mailto:' + a.text.reverse
+        a[:href] = a.text.empty? ? '' : "mailto:#{a.text.reverse}"
       end
     end.to_s
   end
