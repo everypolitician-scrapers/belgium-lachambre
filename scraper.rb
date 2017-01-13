@@ -84,8 +84,8 @@ def scrape(h)
   klass.new(response: Scraped::Request.new(url: url).response)
 end
 
-start = 'http://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&cfm=cvlist54.cfm?legis=54'
-data = scrape(start => LaChambre::MembersPage).members.map do |mem|
+start = 'http://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&cfm=cvlist54.cfm?legis=54&today=%s'
+data = scrape(start % 'y' => LaChambre::MembersPage).members.map do |mem|
   mem.to_h.merge(term: 54).merge(scrape(mem.source => LaChambre::MemberPage).to_h)
 end
 # puts data.map { |r| r.sort_by { |k, _| k }.to_h }
