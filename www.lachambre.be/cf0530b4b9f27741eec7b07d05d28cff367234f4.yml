@@ -22,14 +22,16 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Mon, 20 Mar 2017 10:12:43 GMT
+    - Tue, 21 Mar 2017 13:06:40 GMT
     Content-Length:
     - '11494'
     Server:
     - Web server
+    Proxy-Connection:
+    - Keep-Alive
     Connection:
     - Keep-Alive
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Mon, 20 Mar 2017 10:12:43 GMT
+recorded_at: Tue, 21 Mar 2017 13:06:42 GMT
