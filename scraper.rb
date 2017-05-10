@@ -87,4 +87,4 @@ end
 # puts data.map { |r| r.sort_by { |k, _| k }.to_h }
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
-ScraperWiki.save_sqlite(%i(id term), data)
+ScraperWiki.save_sqlite(%i[id term], data)
