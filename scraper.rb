@@ -86,5 +86,5 @@ data = scrape(start % 'n' => LaChambre::MembersPage).members.map do |mem|
 end
 # puts data.map { |r| r.sort_by { |k, _| k }.to_h }
 
-ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
+ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 ScraperWiki.save_sqlite(%i[id term], data)
