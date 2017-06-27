@@ -22,9 +22,9 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Mon, 26 Jun 2017 09:33:25 GMT
+    - Tue, 27 Jun 2017 19:48:13 GMT
     Content-Length:
-    - '9153'
+    - '9154'
     Server:
     - Web server
     Proxy-Connection:
@@ -34,4 +34,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Mon, 26 Jun 2017 09:33:27 GMT
+recorded_at: Tue, 27 Jun 2017 19:48:15 GMT
