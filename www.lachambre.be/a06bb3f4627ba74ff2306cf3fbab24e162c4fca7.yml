@@ -22,7 +22,7 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Tue, 11 Jul 2017 03:42:21 GMT
+    - Wed, 12 Jul 2017 16:37:17 GMT
     Content-Length:
     - '8895'
     Server:
@@ -34,4 +34,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 11 Jul 2017 03:42:21 GMT
+recorded_at: Wed, 12 Jul 2017 16:37:19 GMT
