@@ -22,9 +22,9 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Thu, 30 Nov 2017 17:47:15 GMT
+    - Fri, 01 Dec 2017 10:11:15 GMT
     Content-Length:
-    - '11207'
+    - '8681'
     Server:
     - Web server
     Proxy-Connection:
@@ -34,4 +34,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 30 Nov 2017 17:47:18 GMT
+recorded_at: Fri, 01 Dec 2017 10:11:16 GMT
