@@ -22,9 +22,9 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Mon, 30 Apr 2018 12:03:01 GMT
+    - Tue, 01 May 2018 21:21:50 GMT
     Content-Length:
-    - '11375'
+    - '8821'
     Server:
     - Web server
     Connection:
@@ -32,4 +32,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Mon, 30 Apr 2018 12:03:04 GMT
+recorded_at: Tue, 01 May 2018 21:21:52 GMT
