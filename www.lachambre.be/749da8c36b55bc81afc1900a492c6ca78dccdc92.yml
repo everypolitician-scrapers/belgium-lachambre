@@ -22,9 +22,9 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Wed, 09 May 2018 08:23:39 GMT
+    - Thu, 10 May 2018 15:54:57 GMT
     Content-Length:
-    - '11907'
+    - '9226'
     Server:
     - Web server
     Connection:
@@ -32,4 +32,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 09 May 2018 08:23:40 GMT
+recorded_at: Thu, 10 May 2018 15:54:58 GMT
