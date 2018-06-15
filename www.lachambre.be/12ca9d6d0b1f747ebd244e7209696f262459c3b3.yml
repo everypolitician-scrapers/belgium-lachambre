@@ -23,10 +23,12 @@ response:
     - Accept-Encoding
     X-Xss-Protection:
     - 1;mode=block
+    X-Content-Type-Options:
+    - nosniff
     Date:
-    - Fri, 15 Jun 2018 01:46:55 GMT
+    - Fri, 15 Jun 2018 23:16:51 GMT
     Content-Length:
-    - '7971'
+    - '10442'
     Server:
     - Web server
     Connection:
@@ -34,4 +36,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Fri, 15 Jun 2018 01:46:57 GMT
+recorded_at: Fri, 15 Jun 2018 23:16:54 GMT
