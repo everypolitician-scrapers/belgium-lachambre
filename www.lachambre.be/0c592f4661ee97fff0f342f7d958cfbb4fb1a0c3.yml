@@ -26,9 +26,9 @@ response:
     X-Content-Type-Options:
     - nosniff
     Date:
-    - Thu, 12 Jul 2018 13:58:04 GMT
+    - Fri, 13 Jul 2018 18:53:51 GMT
     Content-Length:
-    - '7734'
+    - '10076'
     Server:
     - Web server
     Connection:
@@ -36,4 +36,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 12 Jul 2018 13:58:21 GMT
+recorded_at: Fri, 13 Jul 2018 18:53:53 GMT
