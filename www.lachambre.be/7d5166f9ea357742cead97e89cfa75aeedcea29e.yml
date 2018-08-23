@@ -26,7 +26,7 @@ response:
     X-Content-Type-Options:
     - nosniff
     Date:
-    - Wed, 22 Aug 2018 02:45:57 GMT
+    - Thu, 23 Aug 2018 01:44:32 GMT
     Content-Length:
     - '11054'
     Server:
@@ -36,4 +36,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 22 Aug 2018 02:46:00 GMT
+recorded_at: Thu, 23 Aug 2018 01:44:33 GMT
