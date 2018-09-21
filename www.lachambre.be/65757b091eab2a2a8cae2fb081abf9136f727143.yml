@@ -1,0 +1,39 @@
+---
+request:
+  method: get
+  uri: http://www.lachambre.be/kvvcr/showpage.cfm?cfm=cvview54.cfm?key=06512&lactivity=54&language=fr&section=/depute
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Content-Type:
+    - text/html;charset=iso-8859-1
+    Vary:
+    - Accept-Encoding
+    X-Xss-Protection:
+    - 1;mode=block
+    X-Content-Type-Options:
+    - nosniff
+    Date:
+    - Fri, 21 Sep 2018 09:48:37 GMT
+    Content-Length:
+    - '7614'
+    Server:
+    - Web server
+    Connection:
+    - Keep-Alive
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Fri, 21 Sep 2018 09:48:38 GMT
