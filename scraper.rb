@@ -83,7 +83,7 @@ start = 'http://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&
 data = scrape(start % 'n' => LaChambre::MembersPage).members.map do |mem|
   mem.to_h.merge(term: 54).merge(scrape(mem.source => LaChambre::MemberPage).to_h)
 end
-# puts data.map { |r| r.sort_by { |k, _| k }.to_h }
+data.each { |mem| puts mem.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h } if ENV['MORPH_DEBUG']
 
 ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 ScraperWiki.save_sqlite(%i[id term], data)
