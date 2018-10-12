@@ -24,7 +24,7 @@ end
 class LaChambre
   class HTML < Scraped::HTML
     decorator ReversedEmails
-    decorator Scraped::Response::Decorator::AbsoluteUrls
+    decorator Scraped::Response::Decorator::CleanUrls
   end
 
   class MemberPage < HTML
